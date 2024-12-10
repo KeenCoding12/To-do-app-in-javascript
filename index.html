@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List using HTML, CSS & JavaScript</title>
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="todo">
+        <h1 class="title">Todo List</h1>
+        <hr>
+
+        <div class="todo-list">
+            <div class="todo-list-wrapper">
+                <div class="task">
+                    <div class="task-content">
+                        <p class="task-title">task title</p>
+                        <p class="text">task details</p>
+                        <div class="due-date-wrapper">
+                            <span><i class="ri-calendar-event-line"></i>Due date</span>
+                            <span><i class="ri-timer-line"></i>Due Time</span>
+                        </div>
+                    </div>
+                    <button class="delete-task">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="empty-message">
+                <img src="./todo.png" alt="todo img" width="90">
+                <p>click on the plus icon to add a new todo</p>
+            </div>
+        </div>
+
+        <button class="add-todo-btn">
+            <i class="ri-add-large-line"></i>
+        </button>
+
+        <div class="todo-input-wrapper">
+            <div class="task-input">
+                <input type="text" placeholder="task title" class="task-title-input">
+                <input type="date" class="due-date">
+                <input type="time" class="due-time">
+                <textarea class="task-details" placeholder="Task details"></textarea>
+                <div class="input-btn-wrapper">
+                    <a href="#" class="cancel-input-btn">Cancel</a>
+                    <a href="#" class="add-input-btn">Add</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Custom JS link -->
+    <script src="main.js"></script>
+</body>
+</html>
